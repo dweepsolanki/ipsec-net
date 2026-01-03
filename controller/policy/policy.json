@@ -1,0 +1,47 @@
+{
+    "policy_name": "linux_to_linux_ipsec_demo",
+    "description": "Centralized IPsec policy for Linux-to-Linux secure communication",
+  
+    "tunnels": [
+      {
+        "tunnel_id": "tunnel-1",
+        "type": "site-to-site",
+        "mode": "tunnel",
+        "protocol": "ESP",
+  
+        "endpoints": {
+          "left": {
+            "hostname": "ipsec-node-1",
+            "ip": "192.168.1.64"
+          },
+          "right": {
+            "hostname": "ipsec-node-2",
+            "ip": "192.168.1.65"
+          }
+        },
+  
+        "traffic_selectors": {
+          "left_subnet": "192.168.1.64/32",
+          "right_subnet": "192.168.1.65/32"
+        },
+  
+        "crypto": {
+          "ike_version": "ikev2",
+          "encryption": "aes256",
+          "integrity": "sha256",
+          "dh_group": "modp2048"
+        },
+  
+        "authentication": {
+          "method": "psk",
+          "psk": "StrongSharedKey123!"
+        },
+  
+        "lifecycle": {
+          "auto_start": true,
+          "rekey": true,
+          "dpd": true
+        }
+      }
+    ]
+  }
