@@ -3,7 +3,7 @@
 Watch the complete project demonstration:
 
 🔗 Demo Link:  
-https://drive.google.com/drive/u/0/folders/18wmLqoK_WpPVlspPgZQbT4t2YVAcB3F6
+https://drive.google.com/file/d/15zEgPJCZ5KPZ9j7MOXCmFaRyzlg6e3lz/view?usp=sharing
 
 The demo showcases:
 
