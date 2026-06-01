@@ -1,3 +1,28 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python Cache
+pycache/
+.pyc
+
+# macOS
 .DS_Store
-.streamlit/
-__pycache__/
+._
+__MACOSX/
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+
+# Environment Files
+.env
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Generated Configs
+*.bak
